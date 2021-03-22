@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ID-Foods</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&amp;family=Crimson+Text&amp;family=Dosis&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="navigation-bar">
+        <h1 class="brand">ID-Foods</h1>
+        <ul id="Menu">
+          <li class="menu-list"><a href="#second-timeline">Products</a></li>
+          <li class="menu-list"><a href="#fourth-timeline">About</a></li>
+          <li class="menu-list"><a href="#fourth-timeline">Register</a></li>
+          <li class="menu-list" id="cartBox">
+            <span class="numberDisplay numberDisplay2" id="count">0</span
+            ><img class="cart" src="images/shopping-cart.png" alt="Cart" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <div class="content">
+        <div class="first-timeline">
+          <article>
+            <div class="timeline-description">
+              <h1>Buy, Heat, Eat.</h1>
+              <h3 class="timeline-text">
+                <em>Scrummy</em> instant and packaged cuisine/traditional foods
+                from Indonesia.
+              </h3>
+              <button class="start-button">
+                <a href="#second-timeline"
+                  >Start Now
+                  <img
+                    class="start-img"
+                    src="images/down-arrow.png"
+                    alt="down-arrow"
+                  />
+                </a>
+              </button>
+            </div>
+            <div class="first-img">
+              <img class="main-img" src="images/satay.png" alt="Sate Ayam" />
+            </div>
+          </article>
+        </div>
+
+        <!-- Most Loved -->
+        <div id="second-timeline">
+          <article class="mostLoved-content">
+            <h2 class="sign">👑Most Loved👑</h2>
+
+            <ul class="most-loved">
+              <li class="first-most">
+                <img class="food-img" src="images/rendang.png" alt="Rendang" />
+                <h4>Rendang</h4>
+              </li>
+              <li class="second-most">
+                <img
+                  class="food-img"
+                  src="images/dendeng2.jpeg"
+                  alt="Dendeng"
+                />
+                <h4>Dendeng</h4>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Products -->
+
+        <div id="third-timeline">
+          <article class="products-content">
+            <h2>Products</h2>
+
+            <ul class="products-list">
+              <li class="left-title">
+                <section class="products-description">
+                  <img
+                    class="food-img product-img"
+                    src="images/rawon.jpg"
+                    alt="Rawon"
+                  />
+                  <div class="texts">
+                    <h3 class="texts-title">Rawon</h3>
+                    <p class="texts-desc">
+                      Rawon is an Indonesian black soup that famous for its
+                      black color as it is made with a seed type called Pangium
+                      Edule or locals call it Kluwak, Kluwek, Keluak in Javanese
+                      or Kepayang in Indonesian. It is categorized as a
+                      poisonous type of seed that only available in Indonesia
+                      and Papua. Once Kluwak is cooked, the poison is gone
+                      therefore it is edible to consume it.
+                    </p>
+                    <button
+                      class="cartButton"
+                      type="button"
+                      onclick="ButtonClick()"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <li class="right-title">
+                <section class="products-description">
+                  <img
+                    class="food-img product-img"
+                    src="images/gudeg.jpg"
+                    alt="Gudeg"
+                  />
+                  <div class="texts">
+                    <h3 class="texts-title">Gudeg</h3>
+                    <p class="texts-desc">
+                      Gudeg is a traditional Javanese cuisine from Yogyakarta
+                      and Central Java, Indonesia. Gudeg is made from young
+                      unripe jack fruit (Javanese: gori, Indonesian: nangka
+                      muda) stewed for several hours with palm sugar, and
+                      coconut milk. Additional spices include garlic, shallot,
+                      candlenut, coriander seed, galangal, bay leaves, and teak
+                      leaves, the latter giving a reddish-brown color to the
+                      dish.
+                    </p>
+                    <button
+                      class="cartButton"
+                      type="button"
+                      onclick="ButtonClick()"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </section>
+              </li>
+            </ul>
+
+            <ul class="products-list">
+              <li class="left-title">
+                <section class="products-description">
+                  <img
+                    class="food-img product-img"
+                    src="images/rendang2.jpg"
+                    alt="Rendang"
+                  />
+                  <div class="texts">
+                    <h3 class="texts-title">Rendang</h3>
+                    <p class="texts-desc">
+                      Rendang is a food that is dominated by a salty and spicy
+                      taste because the ingredients are from chilies, garlic and
+                      shallots, lemongrass and pepper, but there is a slight
+                      savory and sweet taste that comes from coconut
+                      milk,rendang is a typical food that comes from padang.
+                    </p>
+                    <button
+                      class="cartButton"
+                      type="button"
+                      onclick="ButtonClick()"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <li class="right-title">
+                <section class="products-description">
+                  <img
+                    class="food-img product-img"
+                    src="images/ayam-taliwang.jpeg"
+                    alt="Ayam Taliwang"
+                  />
+                  <div class="texts">
+                    <h3 class="texts-title">Ayam Taliwang</h3>
+                    <p class="texts-desc">
+                      Ayam Taliwang / Taliwang chicken is a typical food from
+                      the island of Lombok from Karang Taliwang village, Mataram
+                      City, West Nusa Tenggara which is made from chicken meat.
+                      The chicken served comes from young native chicken which
+                      is grilled and then seasoned with a kind of sauce that
+                      includes dry red chilies, shallots, garlic, tomatoes,
+                      fried shrimp paste, kencur, brown sugar, and salt.
+                    </p>
+                    <button
+                      class="cartButton"
+                      type="button"
+                      onclick="ButtonClick()"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </section>
+              </li>
+            </ul>
+
+            <ul class="products-list">
+              <li class="left-title">
+                <section class="products-description">
+                  <img
+                    class="food-img product-img"
+                    src="images/dendeng3.jpg"
+                    alt="Dendeng"
+                  />
+                  <div class="texts">
+                    <h3 class="texts-title">Dendeng</h3>
+                    <p class="texts-desc">
+                      Dendeng is meat that is thinly cut into flakes whose fat
+                      is trimmed, seasoned with a sour, salty or sweet sauce by
+                      drying over low heat or salting and drying. The result is
+                      meat that is salty and half sweet and doesn't need to be
+                      refrigerated. Dendeng is an example of preserved food,
+                      jerky comes from West Sumatra.
+                    </p>
+                    <button
+                      class="cartButton"
+                      type="button"
+                      onclick="ButtonClick()"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <li class="right-title">
+                <section class="products-description">
+                  <img
+                    class="food-img product-img"
+                    src="images/kari-tempe.jpg"
+                    alt="Tempe Kari"
+                  />
+                  <div class="texts">
+                    <h3 class="texts-title">Tempe Kari</h3>
+                    <p class="texts-desc">
+                      Tempe Kari / Curry Tempeh made from tempeh cooked in
+                      coconut milk, traditional spices such as lemongrass and
+                      lime leaves, carrots and green beans.
+                    </p>
+                    <button
+                      class="cartButton"
+                      type="button"
+                      onclick="ButtonClick()"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </section>
+              </li>
+            </ul>
+
+            <ul class="products-list">
+              <li class="left-title sate">
+                <section class="products-description">
+                  <img
+                    class="food-img product-img"
+                    src="images/sate2.jpg"
+                    alt="Sate Ayam/Satay"
+                  />
+                  <div class="texts">
+                    <h3 class="texts-title">Sate Ayam / Satay</h3>
+                    <p class="texts-desc">
+                      Satay is a typical Indonesian food that first appeared in
+                      Madura. The basic ingredients are chicken or beef which is
+                      grilled with soy sauce so that it creates a distinctive
+                      aroma and a sweet, salty and savory taste. Then add it
+                      with a sprinkling of peanut sauce as a complement.
+                    </p>
+                    <button
+                      class="cartButton"
+                      type="button"
+                      onclick="ButtonClick()"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </section>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Register -->
+        <div id="fourth-timeline">
+          <div class="box regist">
+            <div class="box-left">
+              <h3 class="welcome-text">Welcome!</h3>
+              <h4 class="welcome-text">Register and enjoy our foods.</h4>
+            </div>
+            <div class="box-right">
+              <h1 class="regist-text">Register Now!</h1>
+              <form>
+                <input
+                  type="text"
+                  name="yourName"
+                  value=""
+                  placeholder="First Name"
+                /><br />
+                <input
+                  type="text"
+                  name="yourName"
+                  value=""
+                  placeholder="Last Name"
+                /><br />
+                <input
+                  type="email"
+                  name="yourEmail"
+                  value=""
+                  placeholder="Email Address"
+                /><br />
+                <input
+                  type="password"
+                  name="yourPassword"
+                  value=""
+                  placeholder="Password"
+                /><br />
+                <input
+                  type="password"
+                  name="yourPassword"
+                  value=""
+                  placeholder="Confirm Password"
+                /><br />
+                <p>Already have an account? <a href="#">Sign in.</a></p>
+                <input class="submit-button" type="submit" name="" />
+              </form>
+            </div>
+          </div>
+
+          <!-- About -->
+          <aside>
+            <div class="box about">
+              <div class="box-left about-left">
+                <h3 class="about-text">ABOUT</h3>
+              </div>
+              <div class="box-right about-right">
+                <img class="ajeng-img" src="images/ajeng.jpg" alt="Ajeng CP" />
+                <h4 class="name">Ajeng Cahyaning Prameswari</h4>
+                <p class="about-bio">
+                  A college student of University of Muhammadiyah Malang
+                  majoring Informatics Engineering.
+                </p>
+                <p class="about-bio email">ajengcp@webmail.umm.ac.id</p>
+                <p class="about-bio phone">+62 - 8565 - 6202 - 601</p>
+                <p class="about-bio instagram">Instagram : ajenggcp</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Indonesian Map -->
+        <img
+          class="indonesia"
+          src="images/indonesia-map.png"
+          alt=" Indonesian-Map"
+        />
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p id="copyright">© 2020 Ajeng CP @University of Muhammadiyah Malang.</p>
+    </footer>
+
+    <script src="assets/index.js"></script>
+  </body>
+</html>
